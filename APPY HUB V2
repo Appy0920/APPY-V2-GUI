@@ -1,0 +1,117 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Made by APPY0920", HidePremium = false, IntroText = "Appy Hub",SaveConfig = true, ConfigFolder = "APPY HUB V2"})
+
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Join the discord!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+local MainTab = Window:MakeTab({
+	Name = "Blade Ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = MainTab:AddSection({
+	Name = "blade ball!"
+})
+
+MainTab:AddButton({
+    Name = "BEDOL HUB.Blade Ball",
+    Callback = function()
+              loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/-beta-/main/AutoParry.lua"))()
+      end    
+})
+
+MainTab:AddButton({
+    Name = "FPS booster",
+    Callback = function()
+              -- Made by RIP#6666
+_G.Settings = {
+    Players = {
+        ["Ignore Me"] = true, -- Ignore your Character
+        ["Ignore Others"] = true -- Ignore other Characters
+    },
+    Meshes = {
+        Destroy = false, -- Destroy Meshes
+        LowDetail = true -- Low detail meshes (NOT SURE IT DOES ANYTHING)
+    },
+    Images = {
+        Invisible = true, -- Invisible Images
+        LowDetail = false, -- Low detail images (NOT SURE IT DOES ANYTHING)
+        Destroy = false, -- Destroy Images
+    },
+    ["No Particles"] = true, -- Disables all ParticleEmitter, Trail, Smoke, Fire and Sparkles
+    ["No Camera Effects"] = true, -- Disables all PostEffect's (Camera/Lighting Effects)
+    ["No Explosions"] = true, -- Makes Explosion's invisible
+    ["No Clothes"] = true, -- Removes Clothing from the game
+    ["Low Water Graphics"] = true, -- Removes Water Quality
+    ["No Shadows"] = true, -- Remove Shadows
+    ["Low Rendering"] = true, -- Lower Rendering
+    ["Low Quality Parts"] = true -- Lower quality parts
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua"))()
+      end    
+})
+
+MainTab:AddButton({
+	Name = "discord username: /console",
+	Callback = function()
+      		print("appy0920")
+  	end    
+})
+
+MainTab:AddToggle({
+	Name = "discord say: /console",
+	Default = false,
+	Callback = function(Value)
+		print("https://discord.gg/V6wQyG2kY3")
+	end    
+})
+
+local MainTab = Window:MakeTab({
+	Name = "ADMIN",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = MainTab:AddSection({
+	Name = "admin"
+})
+
+
+MainTab:AddButton({
+    Name = "Nameless Admin",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source'))()      end    
+})
+
+
+MainTab:AddButton({
+    Name = "Inf Yeild",
+    Callback = function()
+              loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+      end    
+})
+
+local MainTab = Window:MakeTab({
+	Name = "PRISON LIFE",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = MainTab:AddSection({
+	Name = "prison life"
+})
+
+MainTab:AddButton({
+    Name = "Tiger Admin",
+    Callback = function()
+               loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/Script'))() 
+      end    
+})
+
+OrionLib:Init()
